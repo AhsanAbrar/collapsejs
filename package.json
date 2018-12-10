@@ -1,0 +1,46 @@
+{
+    "name": "collapsejs",
+    "version": "0.1.0",
+    "description": "Lightweight Vanilla Javascript Collapse No Need any Dependency.",
+    "main": "dist/collapsejs.js",
+    "module": "dist/collapsejs.js",
+    "unpkg": "dist/collapsejs.js",
+    "jsdelivr": "dist/collapsejs.js",
+    "files": [
+        "src",
+        "dist/*.js"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "rollup": "rollup -c",
+        "rollup-prod": "rollup -c --environment INCLUDE_DEPS,BUILD:production",
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AhsanAbrar/collapsejs.git"
+    },
+    "keywords": [
+        "es6",
+        "js",
+        "collapse"
+    ],
+    "author": "Ahsan Abrar",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/AhsanAbrar/collapsejs/issues"
+    },
+    "homepage": "https://github.com/AhsanAbrar/collapsejs#readme",
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "laravel-mix": "^4.0.0-beta.2",
+        "rollup-plugin-babel": "^4.0.3",
+        "rollup-plugin-babel-minify": "^6.2.0"
+    }
+}
