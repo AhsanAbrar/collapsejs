@@ -9,9 +9,9 @@ mix.js('src/js/index.js', `dist/collapsejs${min}.js`)
 
 mix.webpackConfig({
 	output: {
-		library: 'collapsejs',
+		library: 'collapse',
 		libraryTarget: 'umd',
-		libraryExport: 'default',
+		// libraryExport: 'default',
 		umdNamedDefine: true
 	}
 })

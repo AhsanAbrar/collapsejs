@@ -1,11 +1,11 @@
 {
     "name": "collapsejs",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Lightweight Vanilla Javascript Collapse No Need any Dependency.",
     "main": "dist/collapsejs.js",
-    "module": "dist/collapsejs.js",
-    "unpkg": "dist/collapsejs.js",
-    "jsdelivr": "dist/collapsejs.js",
+    "module": "dist/collapsejs-esm.js",
+    "unpkg": "dist/collapsejs.min.js",
+    "jsdelivr": "dist/collapsejs.min.js",
     "files": [
         "src",
         "dist/*.js"

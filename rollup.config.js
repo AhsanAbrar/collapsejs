@@ -28,16 +28,12 @@ export default {
 	input: 'src/js/index.js',
 	output: [
 		{
-			file: production ? 'dist/bundle-cjs.min.js' : 'dist/bundle-cjs.js',
-			format: 'cjs'
-		},
-		{
-			file: production ? 'dist/bundle-umd.min.js' : 'dist/bundle-umd.js',
+			file: production ? 'dist/collapsejs.min.js' : 'dist/collapsejs.js',
 			name: 'collapsejs',
 			format: 'umd'
 		},
 		{
-			file: production ? 'dist/bundle-esm.min.js' : 'dist/bundle-esm.js',
+			file: production ? 'dist/collapsejs-esm.min.js' : 'dist/collapsejs-esm.js',
 			format: 'esm'
 		}
 	],
