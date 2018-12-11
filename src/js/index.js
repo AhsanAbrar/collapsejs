@@ -78,6 +78,20 @@ class Collapse {
 		for (let i = 0; i < this.items.length; i++)
 			this.items[i][type]()
 	}
+
+	/**
+	 * Open All
+	 */
+	openAll() {
+		this.openCloseAll('open')
+	}
+
+	/**
+	 * Close All
+	 */
+	closeAll() {
+		this.openCloseAll()
+	}
 }
 
 export default Collapse

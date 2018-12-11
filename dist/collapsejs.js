@@ -204,3 +204,4 @@
   return Collapse;
 
 })));
+//# sourceMappingURL=collapsejs.js.map

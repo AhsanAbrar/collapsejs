@@ -124,6 +124,20 @@ new collapse({
 })
 ```
 
+## API
+
+here is the example:
+
+```javascript
+var collapse = new collapse()
+
+// Call this for close all items
+collapse.closeAll()
+
+// Call this for open all items
+collapse.openAll()
+```
+
 ## Browser compatibility
 
 * Newest two browser versions of Chrome, Firefox, Safari and Edge

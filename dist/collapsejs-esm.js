@@ -196,3 +196,4 @@ function () {
 }();
 
 export default Collapse;
+//# sourceMappingURL=collapsejs-esm.js.map

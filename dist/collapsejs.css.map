@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/sass/D:/laragon/www/collapsejs/src/sass/D:/laragon/www/collapsejs/src/sass/style.sass"],"names":[],"mappings":";;;;;AAAA;EACC,iBAAgB;EAChB,wBAAuB;CAAG","file":"/collapsejs.css","sourcesContent":[".collapse__body {\n\toverflow: hidden;\n\ttransition: height .15s; }\n"],"sourceRoot":""}

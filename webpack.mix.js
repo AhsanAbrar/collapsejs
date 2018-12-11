@@ -12,6 +12,11 @@ const banner =
 mix.sass('src/sass/style.sass', `dist/collapsejs${min}.css`)
    .setPublicPath('dist')
    .disableNotifications()
+   .sourceMaps()
    .banner({
 		banner
 	})
+
+mix.webpackConfig({
+	devtool: 'source-map'
+})

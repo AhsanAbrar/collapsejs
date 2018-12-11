@@ -30,11 +30,13 @@ export default {
 		{
 			file: production ? 'dist/collapsejs.min.js' : 'dist/collapsejs.js',
 			name: 'collapsejs',
-			format: 'umd'
+			format: 'umd',
+			sourcemap: true
 		},
 		{
 			file: production ? 'dist/collapsejs-esm.min.js' : 'dist/collapsejs-esm.js',
-			format: 'esm'
+			format: 'esm',
+			sourcemap: true
 		}
 	],
 	plugins: [
