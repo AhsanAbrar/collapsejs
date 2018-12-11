@@ -196,6 +196,24 @@
           this.items[i][type]();
         }
       }
+      /**
+       * Open All
+       */
+
+    }, {
+      key: "openAll",
+      value: function openAll() {
+        this.openCloseAll('open');
+      }
+      /**
+       * Close All
+       */
+
+    }, {
+      key: "closeAll",
+      value: function closeAll() {
+        this.openCloseAll();
+      }
     }]);
 
     return Collapse;
