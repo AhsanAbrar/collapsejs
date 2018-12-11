@@ -1,3 +1,8 @@
+/*!
+ *  CollapseJs v0.1.4
+ *  (c) 2018 Ahsan Abrar
+ *  Released under the MIT License.
+ */
 .collapse__body {
   overflow: hidden;
   transition: height .15s;

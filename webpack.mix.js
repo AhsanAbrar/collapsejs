@@ -1,17 +1,17 @@
 let mix = require('laravel-mix')
+require('laravel-mix-banner')
+const pkg = require('./package.json')
 
 const min = mix.inProduction() ? '.min' : ''
 
-mix.js('src/js/index.js', `dist/collapsejs${min}.js`)
-   .sass('src/sass/style.sass', `dist/collapsejs${min}.css`)
+const banner =
+	` CollapseJs v${pkg.version}\n` +
+	` (c) ${new Date().getFullYear()} Ahsan Abrar\n` +
+	' Released under the MIT License.'
+
+mix.sass('src/sass/style.sass', `dist/collapsejs${min}.css`)
    .setPublicPath('dist')
    .disableNotifications()
-
-mix.webpackConfig({
-	output: {
-		library: 'collapse',
-		libraryTarget: 'umd',
-		// libraryExport: 'default',
-		umdNamedDefine: true
-	}
-})
+   .banner({
+		banner
+	})

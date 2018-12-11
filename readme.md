@@ -9,25 +9,77 @@ Lightweight Vanilla Javascript Collapse No Need any Dependency.
 
 ## Installation
 
-````
+```bash
 npm i collapsejs --save-dev
-````
+```
 
 or use cdn
 
-````
+```html
 <script src="https://unpkg.com/collapsejs/dist/collapsejs.min.js"></script>
-````
+```
+
+and include this style
+
+```css
+.collapse__body {
+    overflow: hidden;
+    transition: height .15s;
+}
+```
 
 ## Concept
 
-<div></div>
-<div></div>
+```html
+<!-- Default -->
+<div class="collapse__header">Header 1</div>
+<div class="collapse__body">Body 1</div>
+
+<div class="collapse__header">Header 2</div>
+<div class="collapse__body">Body 2</div>
+
+...
+```
+
+if you have multiple collapse on one page you need to wrap like this
+
+```html
+<!-- Collapse 1 -->
+<div class="collapse-1">
+  <div class="collapse__header">Header 1</div>
+  <div class="collapse__body">Body 1</div>
+
+  <div class="collapse__header">Header 2</div>
+  <div class="collapse__body">Body 2</div>
+</div>
+
+
+<!-- Collapse 2 -->
+<div class="collapse-2">
+  <div class="collapse__header">Header 1</div>
+  <div class="collapse__body">Body 1</div>
+
+  <div class="collapse__header">Header 2</div>
+  <div class="collapse__body">Body 2</div>
+</div>
+```
+
+here is the javascript initialize code for multiple
+
+```javascript
+new collapse({
+  container: '.collapse-1'
+})
+
+new collapse({
+  container: '.collapse-2'
+})
+```
 
 
 ## Quick Usage
 
-````
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,8 +106,23 @@ or use cdn
   </script>
 </body>
 </html>
-````
+```
 
+## Options
+
+here is the default options list:
+
+```javascript
+new collapse({
+    container:      '', // collapse wrap id or class e.g. #collapse-1 or .collapse-1
+    header:         '.collapse__header', // header class
+    body:           '.collapse__body', // body class
+    closed:         false, // if true initially all bodies will be closed
+    multiple:       false, // multiple collapse expand
+    collapsible:    false, // if true and multiple false then single item also collapsible.
+    defaultOpen:    1 // default open tab #
+})
+```
 
 ## Browser compatibility
 
