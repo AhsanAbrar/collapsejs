@@ -1,6 +1,6 @@
 {
     "name": "collapsejs",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Lightweight Vanilla Javascript Collapse No Need any Dependency.",
     "main": "dist/collapsejs.js",
     "module": "dist/collapsejs-esm.js",

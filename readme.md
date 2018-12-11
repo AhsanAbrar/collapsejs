@@ -19,6 +19,12 @@ or use cdn
 <script src="https://unpkg.com/collapsejs/dist/collapsejs.min.js"></script>
 ````
 
+## Concept
+
+<div></div>
+<div></div>
+
+
 ## Quick Usage
 
 ````
