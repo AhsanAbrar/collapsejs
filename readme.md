@@ -5,7 +5,11 @@
 
 Lightweight Vanilla Javascript Collapse No Need any Dependency.
 
-[See demo](https://ahsanabrar.github.io/collapse/)
+
+
+> It's Easy as 123, No Dependency, No Conflicts
+
+[See Live Demo](https://ahsanabrar.github.io/collapse/)
 
 ## Installation
 
