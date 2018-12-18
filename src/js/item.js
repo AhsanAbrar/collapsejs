@@ -41,6 +41,8 @@ class Item {
 	open() {
 		this.body.style.height = this.body.scrollHeight + 'px'
 
+		this.header.classList.add('open')
+
 		this.isActive = true
 	}
 
@@ -49,6 +51,8 @@ class Item {
 	 */
 	close() {
 		this.body.style.height = 0
+
+		this.header.classList.remove('open')
 
 		this.isActive = false
 	}

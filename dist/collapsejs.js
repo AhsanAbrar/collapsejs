@@ -78,6 +78,7 @@
       key: "open",
       value: function open() {
         this.body.style.height = this.body.scrollHeight + 'px';
+        this.header.classList.add('open');
         this.isActive = true;
       }
       /**
@@ -88,6 +89,7 @@
       key: "close",
       value: function close() {
         this.body.style.height = 0;
+        this.header.classList.remove('open');
         this.isActive = false;
       }
     }]);
