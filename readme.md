@@ -71,11 +71,11 @@ if you have multiple collapse on one page you need to wrap like this
 here is the javascript initialize code for multiple
 
 ```javascript
-new collapse({
+new collapsejs({
   container: '.collapse-1'
 })
 
-new collapse({
+new collapsejs({
   container: '.collapse-2'
 })
 ```
@@ -117,7 +117,7 @@ new collapse({
 here is the default options list:
 
 ```javascript
-new collapse({
+new collapsejs({
     container:      '', // collapse wrap id or class e.g. #collapse-1 or .collapse-1
     header:         '.collapse__header', // header class
     body:           '.collapse__body', // body class
@@ -133,7 +133,7 @@ new collapse({
 here is the example:
 
 ```javascript
-var collapse = new collapse()
+var collapse = new collapsejs()
 
 // Call this for close all items
 collapse.closeAll()
